@@ -33,7 +33,7 @@ const portfolioProjects = [
       { title: "Clean and intuitive UI with HTML" },
       { title: "Fast and efficient search results" },
     ],
-    link: "https://github.com/Vijay-1289/Search-Engine",
+    link: "https://mytoolengine.netlify.app/",
     image: searchEngineImage,
   },
   {
@@ -45,7 +45,7 @@ const portfolioProjects = [
       { title: "Modern UI/UX design" },
       { title: "Multiplayer functionality" },
     ],
-    link: "https://github.com/Vijay-1289/TIC-TAC-TOE",
+    link: "https://tic-tac-toes-ai.netlify.app/",
     image: ticTacToeImage,
   },
   {
@@ -81,7 +81,7 @@ const portfolioProjects = [
       { title: "Progressive games to learn Quantum Computing" },
       { title: "Easy way to learn topics" },
     ],
-    link: "https://github.com/Vijay-1289/quantum-warrior-quest-saga",
+    link: "https://quantumwarrior.netlify.app/",
     image: quantumImage,
   }
 ];
