@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
@@ -10,6 +11,8 @@ import memojiImage from "@/assets/images/memoji-computer.png";
 import HeroOrbit from "@/components/HeroOrbit";
 import BlurText from "@/components/BlurText";
 import StarBorder from "@/components/StarBorder";
+
+const Lanyard = dynamic(() => import("@/components/Lanyard"), { ssr: false });
 
 export const HeroSection = () => {
   const handleConnect = () => {
@@ -33,6 +36,10 @@ export const HeroSection = () => {
 
   return (
     <section id="home" className="relative z-0 py-32 md:py-48 lg:py-60">
+      {/* 3D Lanyard Badge — right side */}
+      <div className="absolute top-0 bottom-0 right-0 w-[40%] z-10 pointer-events-auto hidden lg:block">
+        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} transparent={true} />
+      </div>
       <div className="absolute inset-0 -z-30 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 opacity-5"
@@ -146,8 +153,8 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container">
-        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center">
+      <div className="container relative z-20 pointer-events-none">
+        <div className="group relative mx-auto flex w-fit flex-col items-center justify-center pointer-events-auto">
           <Image
             onClick={handleResumeDownload}
             className="group size-24 hover:cursor-pointer hover:scale-110 transition-transform duration-300"
@@ -184,7 +191,7 @@ export const HeroSection = () => {
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row pointer-events-auto">
           <button
             onClick={handleMyWork}
             className="inline-flex h-12 items-center gap-2 rounded-xl border border-emerald-500/30 px-6 hover:bg-emerald-500/10 transition-colors duration-300 font-semibold"

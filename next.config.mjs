@@ -41,6 +41,12 @@ const nextConfig = {
       },
     );
 
+    // Handle .glb files with file-loader
+    config.module.rules.push({
+      test: /\.glb$/,
+      type: 'asset/resource',
+    });
+
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
     fileLoaderRule.exclude = /\.svg$/i;
 
