@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { twMerge } from "tailwind-merge";
 
 type BlurTextProps = {
@@ -22,7 +22,7 @@ const BlurText = ({
 }: BlurTextProps) => {
   const [animatedItems, setAnimatedItems] = useState<boolean[]>([]);
   
-  const items = animateBy === 'words' ? text.split(' ') : text.split('');
+  const items = useMemo(() => animateBy === 'words' ? text.split(' ') : text.split(''), [text, animateBy]);
   
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,7 +47,7 @@ const BlurText = ({
     }, delay);
     
     return () => clearTimeout(timer);
-  }, [text, delay, items.length, onAnimationComplete]);
+  }, [delay, items, onAnimationComplete]);
   
   const getDirectionClasses = () => {
     switch (direction) {

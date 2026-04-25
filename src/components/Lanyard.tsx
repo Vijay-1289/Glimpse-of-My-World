@@ -11,9 +11,9 @@ import {
   useRopeJoint,
   useSphericalJoint,
 } from '@react-three/rapier';
-import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 
-import cardGLB from '@/assets/lanyard/card.glb';
+import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
+const cardGLB = '/models/card.glb';
 import lanyardImg from '@/assets/lanyard/lanyard.png';
 
 // Next.js static imports for images return { src, width, height } objects

@@ -176,7 +176,7 @@ export const HeroSection = () => {
 
         <div className="mx-auto max-w-2xl">
           <h1 className="mt-8 gap-4 text-center font-serif text-4xl md:text-6xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <BlurText
               text="Vijay Rama Raju"
               delay={150}
@@ -204,7 +204,7 @@ export const HeroSection = () => {
             className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 text-gray-900 hover:from-emerald-600 hover:to-cyan-600 transition-colors duration-300 font-semibold"
           >
             <span>👋</span>
-            <span>Let's Connect</span>
+            <span>Let&apos;s Connect</span>
           </button>
         </div>
       </div>

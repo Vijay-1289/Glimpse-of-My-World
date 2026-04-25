@@ -44,11 +44,11 @@ export const ContactSection = () => {
           <div className="flex flex-col items-center gap-8 md:flex-row md:gap-16">
             <div className="flex-1">
               <h2 className="font-serif text-2xl md:text-3xl">
-                Let's Connect and Create Something Amazing
+                Let&apos;s Connect and Create Something Amazing
               </h2>
               <p className="mt-4 text-sm md:text-base">
-                Whether you're interested in collaboration, have a project in mind, or just want to say hello,
-                I'm always open to new opportunities and connections.
+                Whether you&apos;re interested in collaboration, have a project in mind, or just want to say hello,
+                I&apos;m always open to new opportunities and connections.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4 md:justify-start">
                 {socialLinks.map((link) => (
