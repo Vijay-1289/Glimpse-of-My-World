@@ -116,7 +116,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="Current Position"
-                description="What I am doing currently"
+                description="Descrbing my self which you need to know"
               />
               <div className="flex flex-col items-center justify-center p-6 text-center">
                 <p className="text-emerald-400 font-medium mb-4">Founder of DSArena</p>
