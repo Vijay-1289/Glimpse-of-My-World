@@ -115,12 +115,11 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="Noodling on"
-                description="Exploring the intersection of AI and Data Science"
+                title="Current Position"
+                description="What I am doing currently"
               />
               <div className="flex flex-col items-center justify-center p-6 text-center">
-                <p className="text-emerald-400 font-medium mb-4">Quantum Computing and Image Processing Intern</p>
-                <p className="text-white/80">NIT Warangal</p>
+                <p className="text-emerald-400 font-medium mb-4">Founder of DSArena</p>
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
