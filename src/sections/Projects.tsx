@@ -4,26 +4,11 @@ import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 
-import aiInterviewImage from "@/assets/images/AI.png";
-import gamingWebsiteImage from "@/assets/images/Gaming.png";
 import searchEngineImage from "@/assets/images/search engine.png";
-import pingPongImage from "@/assets/images/pingpong.png";
-import ticTacToeImage from "@/assets/images/Tictactoe.png";
 import quantumImage from "@/assets/images/quantumwarrior.png";
+import dsarenaImage from "@/assets/images/dsarena.png";
 
 const portfolioProjects = [
-  {
-    company: "Game Development",
-    year: "2024",
-    title: "Ping-Pong Game",
-    results: [
-      { title: "Built with Python and Pygame" },
-      { title: "Classic arcade-style gameplay" },
-      { title: "Smooth animations and controls" },
-    ],
-    link: "https://github.com/Vijay-1289/Ping-Pong-Game-using-pygame",
-    image: pingPongImage,
-  },
   {
     company: "Web Development",
     year: "2024",
@@ -38,42 +23,6 @@ const portfolioProjects = [
   },
   {
     company: "Game Development",
-    year: "2024",
-    title: "TIC-TAC-TOE",
-    results: [
-      { title: "Interactive HTML-based game" },
-      { title: "Modern UI/UX design" },
-      { title: "Multiplayer functionality" },
-    ],
-    link: "https://tic-tac-toes-ai.netlify.app/",
-    image: ticTacToeImage,
-  },
-  {
-    company: "Web Development",
-    year: "2024",
-    title: "Gaming Website",
-    results: [
-      { title: "JavaScript-powered gaming platform" },
-      { title: "Dynamic content loading" },
-      { title: "Responsive design for all devices" },
-    ],
-    link: "https://github.com/Vijay-1289/Gaming-Website",
-    image: gamingWebsiteImage,
-  },
-  {
-    company: "AI Development",
-    year: "2024",
-    title: "AI Interview Platform",
-    results: [
-      { title: "TypeScript-based interview platform" },
-      { title: "AI-powered interview simulations" },
-      { title: "Real-time feedback system" },
-    ],
-    link: "https://github.com/Vijay-1289/AI-Interview-Website",
-    image: aiInterviewImage,
-  },
-  {
-    company: "Game Development",
     year: "2025",
     title: "Quantum Warrior",
     results: [
@@ -83,6 +32,18 @@ const portfolioProjects = [
     ],
     link: "https://quantumwarrior.netlify.app/",
     image: quantumImage,
+  },
+  {
+    company: "Full Stack Development",
+    year: "2025",
+    title: "DSArena",
+    results: [
+      { title: "Competitive DSA learning platform" },
+      { title: "Real-time battles with lives system" },
+      { title: "Leaderboards and progress tracking" },
+    ],
+    link: "https://www.dsarena.in",
+    image: dsarenaImage,
   }
 ];
 
@@ -140,11 +101,9 @@ export const ProjectsSection = () => {
                 </div>
                 <div className="relative">
                   <Image
-                    className="-mb-4 mt-8 rounded-lg shadow-lg md:-mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="-mb-4 mt-8 md:-mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={project.image}
                     alt={project.title}
-                    width={600}
-                    height={400}
                   />
                 </div>
               </div>
